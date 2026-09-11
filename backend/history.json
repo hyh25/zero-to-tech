@@ -1,0 +1,30 @@
+[
+  {
+    "text": "test",
+    "score": 0.5,
+    "label": "中性",
+    "pinyin": "test",
+    "created_at": "2026-09-11T07:13:38+00:00"
+  },
+  {
+    "text": "test",
+    "score": 0.5,
+    "label": "中性",
+    "pinyin": "test",
+    "created_at": "2026-09-11T07:13:38+00:00"
+  },
+  {
+    "text": "ew。",
+    "score": 0.5,
+    "label": "中性",
+    "pinyin": "ew。",
+    "created_at": "2026-09-11T08:11:23+00:00"
+  },
+  {
+    "text": "测试",
+    "score": 0.72,
+    "label": "偏积极",
+    "pinyin": "cè shì",
+    "created_at": "2026-09-11T08:11:30+00:00"
+  }
+]
