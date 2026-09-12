@@ -18,6 +18,7 @@ export default function InputCard({ onResult }) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
+        credentials: 'include', // 让浏览器带上 cookie
       })
 
       if (!res.ok) {
