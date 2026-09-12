@@ -6,6 +6,11 @@ from snownlp import SnowNLP
 from storage import  init_db, save_record, get_history
 from datetime import datetime, timezone
 import uuid
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS").split(",")
 
 def get_session_id(request: Request, response: Response) -> str:
     sid = request.cookies.get("session_id")      # 先看有没有纸条
@@ -23,7 +28,7 @@ init_db()  # 初始化数据库
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
     allow_credentials=True,
